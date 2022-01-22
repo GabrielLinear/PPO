@@ -24,7 +24,7 @@ The observation space and the action space is continuous. The observation space 
 
 The environment is considered solved when the agent reach an average score of +30 over 100 consecutive episodes
 
-### Results of the algorithms
+### Results of the algorithm
 
 Finally we solved the environment in 240 episodes with and 32k timesteps with minibatch of size 64.
 
