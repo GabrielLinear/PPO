@@ -13,7 +13,7 @@ pip uninstall tensorboardX
 conda install tensorboard
 ```
 
-You can re-train the agent with the algorithm by launching the notebook, then on the terminal in the cloned git-hub:
+You can re-train the agent with the algorithm by launching the notebook, then on the terminal in the cloned git hub folder :
 ```
 tensorboard --logdir=Tensorboard-files
 ```
@@ -29,4 +29,4 @@ The environment is considered solved when the agent reach an average score of +3
 
 
 
-For more information you can check the [report](https://github.com/GabrielLinear/RL_Learning/blob/main/Report.pdf). 
+For more information you can check the [report](https://github.com/GabrielLinear/PPO/blob/main/Report.pdf). 
