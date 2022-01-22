@@ -13,7 +13,7 @@ pip uninstall tensorboardX
 conda install tensorboard
 ```
 
-You can re-train the agent with the algorithm by launching the notebook, then on the terminal in the cloned git hub folder :
+You can re-train the agent with the algorithm by launching the notebook PPO_actor_critic, then on the terminal in the cloned git hub folder :
 ```
 tensorboard --logdir=Tensorboard-files
 ```
