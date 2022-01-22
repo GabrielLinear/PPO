@@ -15,7 +15,7 @@ conda install tensorboard
 
 You can re-train the agent with the algorithm by launching the notebook, then on the terminal in the cloned git-hub:
 ```
-tensorboard --logdir=
+tensorboard --logdir=Tensorboard-files
 ```
 
 ### Environment
