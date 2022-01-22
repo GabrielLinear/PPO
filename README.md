@@ -26,7 +26,7 @@ The environment is considered solved when the agent reach an average score of +3
 
 ### Results of the algorithm
 
-Finally we solved the environment in 240 episodes with and 32k timesteps with minibatch of size 64.
+Finally we solved the environment in 157 episodes, 20k timesteps with minibatchs of size 64.
 
 <p align="center">
   <img src= "https://github.com/GabrielLinear/PPO/blob/main/Images/Score_actor_critic.jpg" />
