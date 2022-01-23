@@ -7,6 +7,7 @@ import numpy as np
 from unityagents import UnityEnvironment
 import collections
 import torch.optim as optim
+import time
 
 class Policy(nn.Module):
 
@@ -39,7 +40,6 @@ def collect_trajectories(env,env_info,policy,device):
     brain = env.brains[brain_name]
     state = env_info.vector_observations # get the current state (for each agent)
     states_tab , action_tab, reward_tab, prob_tab = [],[],[], []
-    t = 0
     while True:
         state = torch.from_numpy(state).to(device)
         policy.eval()
@@ -75,7 +75,7 @@ def collect_trajectories(env,env_info,policy,device):
             if np.any(dones):                                  # exit loop if episode finished
                 break
             state = next_states
-            t +=1
+            time.sleep(0.1)
     return states_tab, action_tab, reward_tab,prob_tab
 
 
@@ -98,6 +98,6 @@ policy.load_state_dict(torch.load("Model_checkpoint/PPO_actor_stable.pth"))
 
 episode = 2
 for e in range(episode):
-        states, actions, rewards,prob = collect_trajectories(env,env_info, policy,device,tmax)
+        states, actions, rewards,prob = collect_trajectories(env,env_info, policy,device)
     total_rewards = np.mean(np.sum(rewards,axis=0))
     print(total_rewards)
