@@ -1,4 +1,9 @@
 # A continuous Deep Reinforment Learning case study : Unity Reacher environment
+
+<p align="center">
+  <img src= "https://github.com/GabrielLinear/PPO/blob/main/Images/Env_solved.gif" />
+</p>
+
 Clone this Git:
 ```
 git clone https://github.com/GabrielLinear/PPO.git
